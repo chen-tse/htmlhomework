@@ -14,6 +14,7 @@
             display: flex;
             padding: 0 20px;
             background-color: #000;
+            /* position: fixed; */
         }
         .navcenter{
             text-align: center;
@@ -44,7 +45,7 @@
         }
         .title h1{
             font-size: 50px;
-            margin: 100px 0;
+            margin: 90px 0;
             position: relative;
         }
         .title h1::after{
@@ -70,6 +71,79 @@
             position: relative;
             overflow: hidden;
         }
+        .wrap{
+            width: 980px;
+            height: 800px;
+            margin: 50px auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .adgroup{
+            width: 100%;
+            height: 100%;
+            margin: 50px;
+            /* background-color: #00f; */
+            position: relative;
+        }
+        .fivebig{
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        /* .flex > .item:nth-child(even) .pic{
+            order: 1;
+        } */
+        .wrap > .adgroup:nth-child(even) .fivebig{
+            top:  0;
+            left: 600px;
+        }
+        .background
+        {
+            width: 440px;
+            height: 275px;
+            background-color: #eee;
+            position: absolute;
+            top: 50px;
+            right: -70px;
+        }
+        .wrap > .adgroup:nth-child(even) .background{
+            top: 50px;
+            right: 150px;
+        }
+        .pic{
+            position: absolute;
+            top: 137px;
+            right: 0;
+        }
+        .wrap > .adgroup:nth-child(even) .pic{
+            top:  137px;
+            right: 185px;
+        }
+        .content{
+            position: absolute;
+            top: 540px;
+            left: 50px;
+        }
+        .wrap > .adgroup:nth-child(even) .content{
+            top: 540px;
+            left: 270px;
+        }
+        .play{
+            position: absolute;
+            top: 337px;
+            right: -10px;
+        }
+        .wrap > .adgroup:nth-child(even) .play{
+            top: 337px;
+            right: 830px;
+        }
+        /* .footer{
+            text-align: center;
+            background-color: #000;
+            color: #888;
+            padding: 20px 0;
+        } */
+
     </style>
 </head>
 <body>
@@ -101,79 +175,84 @@
         <div class="adgroup">
             <div class="background"></div>
             <div class="pic">
-                <img src="" alt="">
+                <img src="pic/asset 55.png" alt="">
             </div>
             <div class="fivebig">
-                <img src="" alt="">
+                <img src="pic/asset 57.png" alt="">
             </div>
             <div class="content">
-                <img src="" alt="">
+                <img src="pic/asset 58.png" alt="">
             </div>
             <div class="play">
-                <img src="" alt="">
+                <img src="pic/asset 56.png" alt="">
             </div>
         </div>
         <div class="adgroup">
             <div class="background"></div>
             <div class="pic">
-                <img src="" alt="">
+                <img src="pic/asset 59.png" alt="">
             </div>
             <div class="fivebig">
-                <img src="" alt="">
+                <img src="pic/asset 60.png" alt="">
             </div>
             <div class="content">
-                <img src="" alt="">
+                <img src="pic/asset 61.png" alt="">
             </div>
             <div class="play">
-                <img src="" alt="">
+                <img src="pic/asset 56.png" alt="">
             </div>
         </div>
         <div class="adgroup">
             <div class="background"></div>
             <div class="pic">
-                <img src="" alt="">
+                <img src="pic/asset 62.png" alt="">
             </div>
             <div class="fivebig">
-                <img src="" alt="">
+                <img src="pic/asset 63.png" alt="">
             </div>
             <div class="content">
-                <img src="" alt="">
+                <img src="pic/asset 64.png" alt="">
             </div>
             <div class="play">
-                <img src="" alt="">
+                <img src="pic/asset 56.png" alt="">
             </div>
         </div>
         <div class="adgroup">
             <div class="background"></div>
             <div class="pic">
-                <img src="" alt="">
+                <img src="pic/asset 65.png" alt="">
             </div>
             <div class="fivebig">
-                <img src="" alt="">
+                <img src="pic/asset 66.png" alt="">
             </div>
             <div class="content">
-                <img src="" alt="">
+                <img src="pic/asset 67.png" alt="">
             </div>
             <div class="play">
-                <img src="" alt="">
+                <img src="pic/asset 56.png" alt="">
             </div>
         </div>
         <div class="adgroup">
             <div class="background"></div>
             <div class="pic">
-                <img src="" alt="">
+                <img src="pic/asset 68.png" alt="">
             </div>
             <div class="fivebig">
-                <img src="" alt="">
+                <img src="pic/asset 69.png" alt="">
             </div>
             <div class="content">
-                <img src="" alt="">
+                <img src="pic/asset 70.png" alt="">
             </div>
             <div class="play">
-                <img src="" alt="">
+                <img src="pic/asset 56.png" alt="">
             </div>
         </div>
+        
     </div>
 
+   <!-- <div class="footer">
+        &copy; copyright 2020 by Chen-Tse
+    </div> -->
+    
 </body>
 </html>
