@@ -73,15 +73,23 @@
         }
         .wrap{
             width: 980px;
-            height: 800px;
             margin: 50px auto;
+            /* background-color: #00f; */
             display: flex;
             flex-wrap: wrap;
         }
+        .wrap::after{
+            content: '';
+            height: 0;
+            display: block;
+            clear: both;
+        }
         .adgroup{
             width: 100%;
-            height: 100%;
+            height: 800px;
             margin: 50px;
+            display: flex;
+            flex-wrap: wrap;
             /* background-color: #00f; */
             position: relative;
         }
@@ -137,12 +145,12 @@
             top: 337px;
             right: 830px;
         }
-        /* .footer{
+        .footer{
             text-align: center;
             background-color: #000;
             color: #888;
             padding: 20px 0;
-        } */
+        }
 
     </style>
 </head>
@@ -250,9 +258,9 @@
         
     </div>
 
-   <!-- <div class="footer">
+   <div class="footer">
         &copy; copyright 2020 by Chen-Tse
-    </div> -->
+    </div>
     
 </body>
 </html>
