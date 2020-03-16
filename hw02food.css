@@ -100,7 +100,6 @@
     margin-left: 9%;
     box-shadow: -13px 15px 33px -18px rgba(0, 0, 0, .1);
 }
-
 .foodbutton{
     margin: 25px 0;
     width: 100%;
@@ -126,5 +125,37 @@
 }
 .foodbutton .food:hover{
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-
+}
+.middlepic{
+    width: 1200px;
+    margin: 50px auto;
+    display: flex;
+}
+.middlepic .mleft_pic{
+    width: 50%;
+}
+.middlepic .mleft_pic img{
+    vertical-align: top;
+}
+.middlepic .mright_pic{
+    width: 50%;
+}
+.middlepic .mright_pic .mright_pic_top{
+    height: 50%;
+}
+.middlepic .mright_pic .mright_pic_bottom{
+    height: 50%;
+    margin: 15px 0 0 0;
+}
+.middlepic .mright_pic .mright_pic_top img{
+    vertical-align: top;
+}
+.middlepic .mright_pic .mright_pic_bottom img{
+    vertical-align: top;
+}
+.footer{
+    text-align: center;
+    background-color: rgb(255, 238, 0);
+    color: #000;
+    padding: 20px 0;
 }
