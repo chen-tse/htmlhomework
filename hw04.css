@@ -1,0 +1,107 @@
+.title{
+    text-align: center;
+    margin: 30px 0;
+}
+.title .title_bold{
+    font-weight: bold;
+}
+.title .title_fine{
+    font-weight: 300;
+}
+
+.showcase h3{
+    font-family: 'Six Caps', sans-serif;
+    letter-spacing: 0.05em;
+    font-weight: normal;
+    margin: 15px 0;
+    font: bold 40px Work Sans;
+    text-transform: uppercase;
+    
+}
+.showcase a{
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+}
+.showcase_1 a{
+    color: #7dd0dc;
+    display: block;
+    position: relative;
+    border-top: 1px solid;
+    border-bottom: 1px solid #b9b9b9;
+}
+.showcase_2 a{
+    color: #d4bcb5;
+    display: block;
+    position: relative;
+    border-top: 1px solid;
+    border-bottom: 1px solid #b9b9b9;
+}
+.showcase_3 a{
+    color: #ffa396;
+    display: block;
+    position: relative;
+    border-top: 1px solid;
+    border-bottom: 1px solid #b9b9b9;
+}
+.showcase p{
+    margin: 15px 0;
+    padding: 0;
+    font-size: 20px;
+    margin-top: 4px;
+    letter-spacing: 0.02em;
+    font-weight: 500;
+    color: #333439;
+}
+
+.browse_text{
+    text-align: center;
+    padding: 20px 20px 65px;
+}
+.browse_text h4{
+    margin: 15px 0;
+    padding: 24px 0 4px;
+    color: #181a1f;
+    font: bold 22px Work Sans;
+}
+.browse_text p{
+    padding: 7px 19px;
+    background: transparent;
+    border-color: #181a1f;
+    font-size: 15px;
+    color: #181a1f;
+    font-family: 'Lato', sans-serif;
+}
+.browse_card{
+    border: 1px solid #eee;
+}
+.btn{
+    font-weight: bold;
+    line-height: 1.428571429;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 3px solid transparent;
+}
+.product_info{
+    text-align: center;
+}
+
+.col-md-6{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.col-12{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.hair_pic{
+    height: 400px;
+    width: 100%;
+    background-image: url(jpg4/promo_block_img.jpg);
+    background-size: cover;
+    background-position: center center;
+}

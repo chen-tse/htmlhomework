@@ -1,40 +1,279 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="hw04.css">
+  <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.css">
+  <title>Hello, world!</title>
+</head>
 
-    <div class="container">
-        <div class="row">
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
+<body>
+  
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">HOME</a></li>
+      <li class="breadcrumb-item"><a href="#">PRODUCTS</a></li>
+      <li class="breadcrumb-item"><a href="#">BLOG</a></li>
+      <li class="breadcrumb-item"><a href="#">SALE</a></li>
+      <li class="breadcrumb-item"><a href="#">ABOUT</a></li>
+      <li class="breadcrumb-item"><a href="#">CONTACT US</a></li>
+    </ol>
+  </nav>
+
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="jpg4/greeting_image.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row showcase">
+      <div class="col-12 col-md-4 col-lg-4 showcase_1">
+        <a href="#">
+          <h3>NEW ARRIVALS</h3>
+          <p>SEE OUR LATEST MUST-HAVES</p>
+        </a>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 showcase_2">
+        <a href="#">
+          <h3>WE LOVE</h3>
+          <p>CHECK OUT STYLISH FAVORITES</p>
+        </a>
+      </div>
+      <div class="col-12 col-md-4 col-lg-4 showcase_3">
+        <a href="#">
+          <h3>FREE SHIPPING</h3>
+          <p>ON ALL 2016 COLLECTION</p>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="hair_pic">
+    <div class="hair_text">
+      <h2>HAIR</h2>
+      <h3>Extensions</h3>
+      <h4>ADD LENGTH & VOLUME IN SECONDS</h4>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="title">
+      <h2>
+        <span class="title_bold">
+          BROWSE
+        </span>
+        <span class="title_fine">
+          OUR CATEGORIES
+        </span>
+      </h2>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="browse_card">
+          <div class="browse_img">
+            <img src="jpg4/category1_c699b5ea-b75e-4185-9a8e-2a65b0fc3814_430x396_crop_top.jpg" alt=""
+              class="b-block w-100">
+          </div>
+          <div class="browse_text">
+            <h4>MEN’S HAIR CARE</h4>
+            <p class="collection_products btn">7 products</p>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="browse_card">
+          <div class="browse_img">
+            <img src="jpg4/category2_430x396_crop_top.jpg" alt="" class="b-block w-100">
+          </div>
+          <div class="browse_text">
+            <h4>HAIR STYLING</h4>
+            <p class="collection_products btn">13 products</p>
+          </div>
         </div>
-        <div class="row">
-          <div class="col-12"></div>
-          <div class="col-12"></div>
-          <div class="col-12"></div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="browse_card">
+          <div class="browse_img">
+            <img src="jpg4/category3_430x396_crop_top.jpg" alt="" class="b-block w-100">
+          </div>
+          <div class="browse_text">
+            <h4>HAIR HEALTH TREATMENT</h4>
+            <p class="collection_products btn">9 products</p>
+          </div>
         </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="browse_card">
+          <div class="browse_img">
+            <img src="jpg4/category4_430x396_crop_top.jpg" alt="" class="b-block w-100">
+          </div>
+          <div class="browse_text">
+            <h4>HAIR CARE FOR KIDS</h4>
+            <p class="collection_products btn">7 products</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="title">
+      <h2>
+        <span class="title_bold">
+          PRODUCTS
+        </span>
+        <span class="title_fine">
+          ON SALE
+        </span>
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="product_group">
+          <div class="product_img">
+            <img src="jpg4/argan_oil_hair_mask_01_370x370_crop_top.jpg" alt="" class="d-block w-100">
+          </div>
+          <div class="product_info">
+            <div class="product_name"><a href="#">Argan Oil Hair Mask</a></div>
+            <div class="product_desc product_desc__short">We know that some hair seems to be bad-tempered For saving
+              your time, please use filters: brand, concerns, formulation, ingredient preferences, siz...
+            </div>
+            <div class="product_price"><span class="money" data-currency-usd="$60.00">$60.00</span></div>
+            <div class="product_links">
+              <button class="btn btn-cart" type="submit"><i class="fas fa-shopping-cart"></i></i><span>Add to
+                  cart</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="product_group">
+          <div class="product_img">
+            <img src="jpg4/garnier_fructis_01_370x370_crop_top.jpg" alt="" class="d-block w-100">
+          </div>
+          <div class="product_info">
+            <div class="product_name"><a href="#">Garnier Fructis</a></div>
+            <div class="product_desc product_desc__short">Hairspray and Styling Products
+              Coco Chanel said that a woman who cuts her hair is about to change her life. We’ll add that a woman who
+              does anythin...
+            </div>
+            <div class="product_price">
+              <span class="money_text">From </span>
+              <span class="money" data-currency-usd="$90.00">$90.00</span>
+              <span class="money money_sale" data-currency-usd="$100.00">$100.00</span>
+            </div>
+            <div class="product_links">
+              <button class="btn btn_options" href="/products/garnier-fructis"><i
+                  class="fa fa-shopping-cart"></i><span>Add to cart</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="product_group">
+          <div class="product_img">
+            <img src="jpg4/herbal_essences_01_370x370_crop_top.jpg" alt="" class="d-block w-100">
+          </div>
+          <div class="product_info">
+            <div class="product_name">
+              <a href="#">Herbal Essences</a>
+            </div>
+            <div class="product_desc product_desc__short">Hairspray and Styling Products
+              Coco Chanel said that a woman who cuts her hair is about to change her life. We’ll add that a woman who
+              does anythin...
+            </div>
+            <div class="product_price">
+              <span class="money" data-currency-usd="$80.00">$80.00</span>
+            </div>
+            <div class="product_links">
+              <button class="btn btn-cart" type="submit"><i class="fa fa-shopping-cart"></i><span>Add to
+                  cart</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 ">
+        <div class="product_group">
+          <div class="product_img">
+            <img src="jpg4/l_oreal_paris_studio_line_1_370x370_crop_top.jpg" alt="" class="d-block w-100">
+          </div>
+          <div class="product_info">
+            <div class="product_name">
+              <a href="#">L'Oreal Paris Studio Line</a>
+            </div>
+            <div class="product_desc product_desc__short">We know that some hair seems to be bad-tempered
+              For saving your time, please use filters: brand, concerns, formulation, ingredient preferences, siz...
+            </div>
+            <div class="product_price">
+              <span class="money_text">From </span>
+              <span class="money" data-currency-usd="$90.00">$90.00</span>
+              <span class="money money_sale" data-currency-usd="$100.00">$100.00</span>
+            </div>
+            <div class="product_links">
+              <button class="btn btn_options" href="/products/l-oreal-paris-studio-line"><i
+                  class="fa fa-shopping-cart"></i><span>Add to cart</span></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+</body>
+
 </html>
