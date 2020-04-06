@@ -46,6 +46,8 @@
         onclick="InitProduct(this.innerText)">iPhone11</button>
       <button id="ipad" type="button" class="product-btn btn btn-dark"
         onclick="InitProduct(this.innerText)">iPad</button>
+      <button id="Mac" type="button" class="product-btn btn btn-dark"
+        onclick="InitProduct(this.innerText)">Mac</button>
     </div>
 
     <div class="row">
@@ -113,14 +115,14 @@
           ]
         }
       },
-      MacPro: {
+      Mac: {
         Detail: {
           productName: 'MacPro 13',
-          baseImgUrl: './img/mbp13touch-space-gallery1-201907.png'
+          baseImgUrl: './iphone/mbp13touch-space-select-201807_GEO_TW.png'
         },
         OutWard: [
-          { color: '太空灰色', colorValue: '#6e6969', imageUrl: './img/mbp13touch-space.png' },
-          { color: '銀色', colorValue: '#b9aeae', imageUrl: './img/mbp13touch-silver.png' },
+          { color: '太空灰色', colorValue: '#6e6969', imageUrl: './iphone/mbp13touch-space-select-201807_GEO_TW.png' },
+          { color: '銀色', colorValue: '#b9aeae', imageUrl: './iphone/mbp13touch-silver-select-201807_GEO_TW.png' },
         ],
         Spec: {
           Storge:
@@ -134,7 +136,7 @@
       }
     };
 
-    var iphoneBtn = document.getElementById('iphone');
+    // var iphoneBtn = document.getElementById('iphone');
     var productImg = document.getElementById('product-img');
 
     var colorArea = document.getElementById('color');
