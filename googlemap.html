@@ -77,24 +77,57 @@
                     var address = data.features[i].properties["name"];
                     var masksLeft = data.features[i].properties["masksLeft"];
                     var childMasksLeft = data.features[i].properties["childMasksLeft"];
+                    var contentString = '<div id="content">' +
+                        '<div id="siteNotice">' +
+                        '</div>' +
+                        '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+                        '<div id="bodyContent">' +
+                        '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+                        'sandstone rock formation in the southern part of the ' +
+                        'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
+                        'south west of the nearest large town, Alice Springs; 450&#160;km ' +
+                        '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
+                        'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
+                        'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
+                        'Aboriginal people of the area. It has many springs, waterholes, ' +
+                        'rock caves and ancient paintings. Uluru is listed as a World ' +
+                        'Heritage Site.</p>' +
+                        '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+                        'https://en.wikipedia.org/w/index.php?title=Uluru</a> ' +
+                        '(last visited June 22, 2009).</p>' +
+                        '</div>' +
+                        '</div>';
 
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString
+                    });
                     if (masksLeft == 0 || childMasksLeft == 0) {
                         var marker = new google.maps.Marker({
                             position: storelat_lng,
-                            icon: 'https://twemoji.maxcdn.com/2/72x72/2639.png',
-
+                            icon: {
+                                url:'https://dict.emojiall.com/images/120/apple/274c.png',
+                                scaledSize: new google.maps.Size(20, 20)
+                            },
                             map: map,
                             title: `${address}   成人口罩:${masksLeft}   小孩口罩:${childMasksLeft}`
                         });
                     }
+
                     else {
                         var marker = new google.maps.Marker({
                             position: storelat_lng,
-                            icon: 'https://twemoji.maxcdn.com/2/72x72/1f600.png',
+                            icon: {
+                                url:'https://twemoji.maxcdn.com/2/72x72/1f642.png',
+                                scaledSize: new google.maps.Size(20, 20)
+                            },
                             map: map,
-                            title: `${address}   成人口罩:${masksLeft}   小孩口罩:${childMasksLeft}`
+                            title: `${address}   成人口罩:${masksLeft}   小孩口罩:${childMasksLeft}`,
+                            // animation: google.maps.Animation.BOUNCE
+                
                         });
                     }
+
+                    
                 }
             })
             .catch((error) => {
