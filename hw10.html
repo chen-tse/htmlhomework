@@ -1,0 +1,200 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>計算機</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: 0;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        #head {
+            margin-top: 20px;
+            justify-content: center;
+        }
+
+        #head .row {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 40px;
+
+        }
+
+        #num_btn button {
+            width: 70px;
+            height: 70px;
+            margin-top: 10px;
+            color: white;
+            background-color: lightblue;
+        }
+
+        #num_btn button:hover {
+            background-color: white;
+            color: lightblue;
+        }
+
+        #num_btn {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #acc button {
+            width: 290px;
+            height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <h2>計算機</h2>
+    <div class="container" id="head">
+        <div class="row">
+
+            <input type="text" id="textinput" style="text-align: right;">
+           
+        </div>
+
+    </div>
+    <div class="container" id="num_btn">
+        <div class="row">
+            <div class="col " id="acc">
+                <button onclick="ac()">AC</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button onclick="one()">1</button>
+                <button onclick="two()">2</button>
+                <button onclick="three()">3</button>
+                <button onclick="except()">/</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button onclick="four()">4</button>
+                <button onclick="five()">5</button>
+                <button onclick="six()">6</button>
+                <button onclick="mul()">*</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button onclick="seven()">7</button>
+                <button onclick="eight()">8</button>
+                <button onclick="nine()">9</button>
+                <button onclick="less()">-</button>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button onclick="point()">.</button>
+                <button onclick="zero()">0</button>
+                <button onclick="ans()">=</button>
+                <button onclick="add()">+</button>
+
+            </div>
+        </div>
+    </div>
+    <script>
+        var input = document.getElementsByTagName('input')[0];
+        input.value = 0;
+        function one() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '1';
+        }
+        function two() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '2';
+        }
+        function three() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '3';
+        }
+        function four() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '4';
+        }
+        function five() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '5';
+        }
+        function six() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '6';
+        }
+        function seven() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '7';
+        }
+        function eight() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '8';
+        }
+        function nine() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '9';
+        }
+        function ac() {
+            document.getElementById("textinput").value = null;
+        }
+
+        function add() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '+';
+        }
+        function less() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '-';
+        }
+        function mul() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '*';
+        }
+        function except() {
+            var number = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = number + '/';
+        }
+        function point() {
+            var number = document.getElementById("textinput").value;
+            if (!number.includes('.')) {
+                document.getElementById("textinput").value = number + '.';
+            }
+        }
+        function ans() {
+            var save = document.getElementById("textinput").value;
+            document.getElementById("textinput").value = eval(save);
+        }
+
+
+    </script>
+</body>
+
+</html>
